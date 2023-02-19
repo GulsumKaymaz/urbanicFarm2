@@ -12,7 +12,7 @@ public class AccountPage extends CommonPage{
 
     @FindBy(xpath = "(//div/span[contains(text(),'Sell-Share')])[1]")
     public WebElement salePTmodule;
-    //Omer hoca
+    //Omer Hgit brancoca
     @FindBy(css = "div>a[href$='account/home']")
     public WebElement account_sideBar;
 
