@@ -8,7 +8,7 @@ import pages.CommonPage;
 
 import static stepDefinitions.Hooks.driver;
 
-public class US01_StepDefs  {
+public class US01_StepDefs {
 
 
     @Given("User goes to {string}")
@@ -21,7 +21,6 @@ public class US01_StepDefs  {
     public void userVerifiesTheUrlIs(String url) {
         Assert.assertEquals(url, driver.getCurrentUrl());
     }
-
 
 
 }

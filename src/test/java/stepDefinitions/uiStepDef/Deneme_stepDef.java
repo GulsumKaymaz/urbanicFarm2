@@ -22,14 +22,14 @@ public class Deneme_stepDef {
 
     @Given("Scenario Outline {string} and {string}")
     public void scenarioOutlineAnd(String email, String password) {
-     //Assert.fail();
+        //Assert.fail();
         BrowserUtilities.loginMethod(email, password);
     }
 
     @Given("Configuration properties kullanarak")
     public void configurationPropertiesKullanarak() {
-        BrowserUtilities.loginMethod(
-                ConfigurationReader.getProperty("sellerEmail"),
+
+        BrowserUtilities.loginMethod(ConfigurationReader.getProperty("sellerEmail"),
                 ConfigurationReader.getProperty("sellerPassword"));
     }
 
@@ -52,7 +52,6 @@ public class Deneme_stepDef {
         BrowserUtilities.loginMethod(email, password);
 
     }
-
 
 
 }
